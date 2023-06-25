@@ -24,4 +24,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
     Route::get('categories', [FrontendController::class, 'getCategories']);
     Route::get('category/{id}', [FrontendController::class, 'getCategoryArts']);
+    Route::get('featured-all-arts', [FrontendController::class, 'getAllFeaturedArts']);
 
